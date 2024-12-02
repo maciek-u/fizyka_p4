@@ -2,7 +2,6 @@ R = 13.6
 h = 4.135667696e-15
 c = 3.0e8
 def czy_foton_pochloniety(energia_fotonu):
-    poziomy_energetyczne = []
     for n1 in range(1, 20):  # sprawdzam poziomy od 1 do 21, bo pozniejsze przejscia maja energie mniejsza niz 0,01 a program ma liczyc z ta dokadnoscia
         for n2 in range(n1 + 1, 21):
             delta_E = R * (1 / n1**2 - 1 / n2**2)
